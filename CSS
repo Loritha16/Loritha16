@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App Workshop Week 2</title>
+    <style>
+        div{
+          display: block;
+        }
+        h1{
+          display: block;
+          margin: 0 auto;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          font-size: 48px;
+          line-height: 48px;
+          font-weight: bold;
+          color: blue;
+          padding: 0%;
+        }
+          h2 {
+          display: block;
+          text-align: center;
+          font-family:monospace;
+          font-size: 34px;
+          line-height: 48px;
+          font-weight: 400;
+          margin: 10 auto;
+          }
+          h3{
+            display: block;
+            text-align: center;
+            font-family: monospace;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 48px;
+            margin: 0 auto;
+          }
+      
+        h4{
+          display: block;
+          text-align: center;
+          font-family:monospace;
+          font-size: 25px;
+          line-height: 48px;
+          font-weight: 400;
+          margin: 0 auto;        
+        }
+
+        h5{
+          display: block;
+          text-align: center;
+          font-family:monospace;
+          font-size: 25px;
+          line-height: 48px;
+          font-weight: 400;
+          margin: 0 auto;  
+        }
+        strong{
+          font-weight: bold;
+        
+        }
+        ul{
+          padding: 0%;
+
+        }
+        li {
+          list-style: none;
+          text-align: center;
+          padding: 10px 0;
+          border-radius: 10px;
+          transition: all 200ms ease-in-out;
+          max-width: 400px;
+          margin: 0 auto
+      }
+      
+         li:hover {
+          background-color: floralwhite;
+         
+         }
+      
+         button {
+          display: block;
+          margin: 20px auto;
+          border: 1px solid blue;
+          background: blue;
+          color: white;
+          font-size: 16px;
+          line-height: 22px;
+          padding: 16px 24px;
+          border-radius: 30px;
+          transition: all 200ms ease;
+          cursor: pointer
+      }
+      button:hover{
+        background: white;
+          color: blue;
+          border: 1px solid blue
+        }
+      p{
+        font-size: 18px;
+        opacity: 0.8;
+          text-align: center;
+          font-family: monospace
+      }
+      script{
+        display: none;
+      }
+</style>   
+<body>
+  <h1>
+    😁
+    <br>
+    Currently null°C in null
+  </h1>
+<ul>      
+  <h2>
+   13° /
+    <strong>23°</strong>
+  </h2>      
+<li>
+<h3>
+  🌧Tomorrow
+  <p>
+    10° /
+    <strong>22°</strong> 
+  </p>
+</h3>
+</li>
+<li>
+<h4>
+  🌥 Saturday
+  <p>
+   15° / 
+  <strong>17°</strong>
+  </p>
+</h4>
+</li>
+<li>
+<h5>
+  ☀️ Sunday
+  <p>
+    25° /
+    <strong>28°</strong>
+    </p>
+</h5>
+</li>
+</ul>
+  <button>
+    Change city
+  </button>
+    <p>
+        Coded by Loritha Anak Bunsu
+    </p>
+<script>
+     function changeCity(){
+     let city = prompt("What city do you live in?");
+     let temperature = prompt("What temperature is it?");
+     let heading = document.querySelector("h1");
+     if (temperature < 0){
+      heading.innerHTML = 
+       "🙁<br />Currently " + temperature + "°C in " + city;
+     } else {
+      heading.innerHTML =
+       "😄<br />Currently " + temperature + "°C in " + city;
+     }
+     }
+     let changeButton = document.querySelector("button");
+     changeButton.addEventListener("click",changeCity);
+</script>
+</div>
+<script>
+  if (snaptr){
+     snaptr('track','PAGE_VIEW');
+  }
+  if (fbq){
+    fbq('track',"PageView");
+  }
+
+  if (twq){
+    twq('track','PageView');
+  }
+</script>
+</body>
+</html>
