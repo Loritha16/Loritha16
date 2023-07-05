@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop Week 1</title>
+</head>
+<div class="workshop Week 1">
+<style>
+  div{
+    display: block;
+  }
+  h1{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+  }
+    h2 {
+      color: blue;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+      font-size: 45px;
+      padding: 0 20px;
+    }
+    h3{
+      display: block;
+      text-align: center;
+      font-family: monospace;
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 50px;
+      margin: 0 auto;
+    }
+
+  h4{
+    display: block;
+    text-align: center;
+    font-family:monospace;
+    font-size: 25px;
+    line-height: 48px;
+    font-weight: 400;
+    margin: 0 auto;
+  
+  
+  }
+  strong{
+    font-weight: bold;
+  
+  }
+  ul{
+    padding: 0%;
+  }
+  li {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    transition: all 200ms ease-in-out;
+    max-width: 400px;
+    margin: 0 auto
+}
+
+   li:hover {
+    background-color: floralwhite;
+   
+   }
+
+   button {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid blue;
+    background: blue;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 16px 24px;
+    border-radius: 30px;
+    transition: all 200ms ease;
+    cursor: pointer
+}
+button:hover{
+  background: white;
+    color: blue;
+    border: 1px solid blue
+  }
+p{
+  font-size: 18px;
+  opacity: 0.8;
+    text-align: center;
+    font-family: monospace
+}
+</style>
+
+<body>
+  <h1>
+    
+  </h1>
+  <h2>  
+    Currently 21° in Tokyo
+  </h2>
+  <ul>
+
+  <h3>
+    13° / 
+    <strong>23°</strong>
+  </h3>
+
+<li>
+  <h4>
+    🌧Tomorrow
+    <p>
+      10° /
+      <strong>22°</strong> 
+    </p>
+</h4>
+</li>
+<li>
+<h4>
+       🌥 Saturday
+      <p>
+        15° / 
+        <strong>17°</strong>
+      </p>
+  </h4>
+</li>
+<li>
+  <h4>
+      ☀️ Sunday
+      <p>
+        25° /
+        <strong>28°</strong>
+      </p>
+  </h4>
+</li>
+</ul>
+<button>
+  Change city
+</button>
+<p>
+  Coded by Loritha Anak Bunsu
+</p>
+</div>
+</body>
+</html>
